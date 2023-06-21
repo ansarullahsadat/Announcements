@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Announcements</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body
+    class="bg-[#202b47] flex justify-center items-center min-h-screen py-4 overflow-x-hidden"
+  >
+    <!-- bg -->
+    <div
+      class="bg-amber-500 w-[32rem] h-[32rem] rounded-3xl absolute bottom-0 right-0 rotate-[45deg]"
+    ></div>
+
+    <div
+      class="w-[26rem] bg-[#2f395d] py-6 px-6 sm:px-8 rounded-lg h-[30rem] relative duration-500 main-content"
+    >
+      <h1 class="flex items-center gap-2 text-xl text-white">
+        <span class="count">2</span>Announcements
+      </h1>
+
+      <div
+        class="jobs flex flex-col gap-2 mt-8 text-slate-100 h-[18rem] overflow-y-auto"
+      >
+        <!-- 1 -->
+        <div class="bg-[#202b47] py-3 px-4 rounded-lg relative">
+          <div class="absolute top-2 right-4">
+            <span class="w-2 h-2 rounded-full inline-block bg-[#2f395d]"></span>
+            <span class="w-2 h-2 rounded-full inline-block bg-[#2f395d]"></span>
+            <span class="w-2 h-2 rounded-full inline-block bg-[#2f395d]"></span>
+          </div>
+
+          <h2 class="text-sm leading-relaxed w-[80%]">
+            Ms. Philips is away this week , Iam going to replace her
+          </h2>
+
+          <div
+            class="flex items-center justify-between mt-2 text-[#707aa0] text-sm"
+          >
+            <div class="flex items-center gap-2">
+              <img
+                src="https://unsplash.com/photos/-FOUPtqP-mY/download?force=true&w=1920"
+                class="img w-8 h-8 rounded-full object-cover border-2 border-blue-500"
+                alt="random"
+              />
+              <span class="">Hettie Marshall</span>
+            </div>
+
+            <span>2 hours ago</span>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="bg-[#202b47] py-3 px-4 rounded-lg relative">
+          <div class="absolute top-2 right-4">
+            <span class="w-2 h-2 rounded-full inline-block bg-[#2f395d]"></span>
+            <span class="w-2 h-2 rounded-full inline-block bg-[#2f395d]"></span>
+            <span class="w-2 h-2 rounded-full inline-block bg-[#2f395d]"></span>
+          </div>
+
+          <h2 class="text-sm leading-relaxed w-[80%]">
+            Bring your book! we will read the next 2 chapter
+          </h2>
+
+          <div
+            class="flex items-center justify-between mt-2 text-[#707aa0] text-sm"
+          >
+            <div class="flex items-center gap-2">
+              <img
+                src="https://unsplash.com/photos/IF9TK5Uy-KI/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjg3MTYwNzU0fA&force=true&w=1920"
+                class="img w-8 h-8 rounded-full object-cover border-2 border-blue-500"
+                alt="random"
+              />
+              <span class="">Marie json</span>
+            </div>
+
+            <span>3 hours ago</span>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="absolute bottom-4 w-full flex items-center justify-center gap-3 flex-col left-0"
+      >
+        <button
+          class="py-1.5 px-6 rounded-lg bg-[#4b9cff] text-white font-medium shadow-xl hover:shadow-[#4b9cff]/30 transition-all dismiss"
+        >
+          Dismiss All
+        </button>
+
+        <button
+          class="py-1.5 px-6 rounded-lg bg-[#4b9cff] text-white font-medium shadow-xl hover:shadow-[#4b9cff]/30 transition-all w-[12rem] add"
+        >
+          Add Job
+        </button>
+      </div>
+    </div>
+
+    <!-- form -->
+
+    <form
+      action="#"
+      class="form w-[18rem] sm:w-[28rem] bg-[#2f395d] p-6 px-3 sm:px-8 rounded-lg absolute text-slate-100 transition-all translate-x-[200%] duration-500 opacity-0"
+    >
+      <h2 class="sm:text-xl text-center mb-6">Add your informations here!😊</h2>
+
+      <div class="flex flex-col gap-2">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          class="py-2 px-2 border bg-transparent outline-none rounded-[5px] focus:border-blue-500"
+        />
+      </div>
+
+      <div class="flex flex-col gap-2 mt-6">
+        <label for="message">Job-title</label>
+        <input
+          type="text"
+          id="message"
+          class="py-2 px-2 border bg-transparent outline-none rounded-[5px] focus:border-blue-500"
+        />
+      </div>
+
+      <div class="flex flex-col gap-2 mt-6">
+        <label for="url">User-profile</label>
+        <input
+          type="url"
+          id="url"
+          class="py-2 px-2 border bg-transparent outline-none rounded-[5px] focus:border-blue-500"
+        />
+      </div>
+
+      <button
+        class="mt-12 w-full py-2 px-4 text-center submit bg-[#4b9cff] rounded-lg"
+      >
+        Submit
+      </button>
+    </form>
+  </body>
+</html>
